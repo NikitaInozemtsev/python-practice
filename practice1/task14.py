@@ -5,6 +5,6 @@ def f14(n):
     elif n == 1:
         return 5
     else:
-        return (math.cos(f14(n - 2)) - math.sin(f14(n - 2)))
+        return math.cos(f14(n - 2)) - math.sin(f14(n - 2))
 
 #print(f14(8))
