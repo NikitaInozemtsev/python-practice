@@ -28,7 +28,7 @@ plt.show()
 
 #task 2 Как по дням недели распределяется активность студентов?
 
-fig = plt.figure()
+#fig = plt.figure()
 mp = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 plt.plot(mp, [days.count(i) for i in mp], marker='o', color='black')
 plt.show()
@@ -40,7 +40,7 @@ lst1 = list()
 for i in messages:
     lst1.append(i[0][:3].replace(' ', ''))
 
-fig = plt.figure()
+# fig = plt.figure()
 mp1 = set(lst1)
 mp1 = list(mp1)
 mp1.sort()
@@ -71,4 +71,10 @@ mp3 = set(lst3)
 mp3 = list(mp3)
 mp3.sort()
 plt.plot(mp3, [lst3.count(i) for i in mp3], marker='o', color='black')
+maxa = max([lst3.count(i) for i in mp3])
+mina = min([lst3.count(i) for i in mp3])
+x = [mina, int((mina + maxa) / 2), maxa]
+plt.yticks(x, ['easy', 'medium', 'hard'])
 plt.show()
+
+
