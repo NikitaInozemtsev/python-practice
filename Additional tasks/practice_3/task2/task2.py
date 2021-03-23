@@ -31,6 +31,8 @@ plt.show()
 #fig = plt.figure()
 mp = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 plt.plot(mp, [days.count(i) for i in mp], marker='o', color='black')
+plt.xlabel('День недели')
+plt.ylabel('Колличество сообщений')
 plt.show()
 
 #task 3 В каких группах было отправлено больше всего сообщений?
@@ -45,6 +47,8 @@ mp1 = set(lst1)
 mp1 = list(mp1)
 mp1.sort()
 plt.plot(mp1, [lst1.count(i) for i in mp1], marker='o', color='black')
+plt.xlabel('Группа')
+plt.ylabel('Колличество сообщений')
 plt.show()
 
 #task 4 В каких группах было получено больше всего правильных решений?
@@ -58,6 +62,8 @@ mp2 = set(lst2)
 mp2 = list(mp2)
 mp2.sort()
 plt.plot(mp2, [lst2.count(i) for i in mp2], marker='o', color='black')
+plt.xlabel('Группа')
+plt.ylabel('Колличество правильных решений')
 plt.show()
 
 #task 5 Какие задачи оказались самыми легкими, самыми сложными?
@@ -75,6 +81,8 @@ maxa = max([lst3.count(i) for i in mp3])
 mina = min([lst3.count(i) for i in mp3])
 x = [mina, int((mina + maxa) / 2), maxa]
 plt.yticks(x, ['easy', 'medium', 'hard'])
+plt.xlabel('Задача')
+plt.ylabel('Сложность')
 plt.show()
 
 
