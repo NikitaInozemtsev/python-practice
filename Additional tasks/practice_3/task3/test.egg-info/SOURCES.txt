@@ -1,8 +1,0 @@
-MANIFEST.in
-setup.py
-test.json
-test.egg-info/PKG-INFO
-test.egg-info/SOURCES.txt
-test.egg-info/dependency_links.txt
-test.egg-info/not-zip-safe
-test.egg-info/top_level.txt
